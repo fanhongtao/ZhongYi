@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="中药">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="名称">
+					<xs:complexType>
+						<xs:attribute name="hz" type="xs:string" use="required" />
+						<xs:attribute name="py" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="介绍" type="xs:string" />
+				<xs:element name="药性">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="气味" type="xs:string" />
+							<xs:element name="归经" type="xs:string" />
+							<xs:element name="毒性" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="功效" type="xs:string" />
+				<xs:element name="应用">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="para">
+								<xs:complexType mixed="true">
+									<xs:sequence minOccurs="0">
+										<xs:element name="title" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="用法用量" type="xs:string" />
+				<xs:element name="使用注意" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
