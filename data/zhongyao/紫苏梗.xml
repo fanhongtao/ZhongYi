@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="紫苏梗" py="zǐ,sū,gěng"/>
+	<介绍>本品为唇形科植物紫苏的干燥茎。</介绍>
+	<药性>
+		<气味>辛，温</气味>
+		<归经>肺经、脾经。</归经>
+	</药性>
+	<功效>理气宽中，止痛，安胎。</功效>
+	<应用>
+		<para>
+			适用于胸膈痞闷，胃脘疼痛，嗳气呕吐，胎动不安。
+		</para>
+	</应用>
+	<用法用量>煎服，5 ~ 10g。</用法用量>
+</中药>
