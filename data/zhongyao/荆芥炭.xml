@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="荆芥炭" py="jīng,jiè,tàn"/>
+	<介绍>本品为荆芥的炮制加工品。取荆芥段照炒炭法炒至表面焦黑色，内部焦黄色，喷淋清水少许，熄灭火星，取出，晾干。</介绍>
+	<药性>
+		<气味>辛、涩，微温。</气味>
+		<归经>肺、肝经。</归经>
+	</药性>
+	<功效>收敛止血。</功效>
+	<应用>
+		<para>适用于便血、崩漏、产后血晕。</para>
+	</应用>
+	<用法用量>煎服，5 ~ 10g。</用法用量>
+</中药>
