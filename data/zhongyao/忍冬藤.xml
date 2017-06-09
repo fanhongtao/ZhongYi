@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="忍冬藤" py="rěn,dōng,téng" />
+	<介绍>本品为忍冬科植物忍冬的干燥茎枝，又名金银花藤。</介绍>
+	<药性>
+		<气味>苦，微寒。</气味>
+		<归经>归肺、胃经。</归经>
+	</药性>
+	<功效>功用与金银花相似，但清热解毒之力不及金银花，兼有清热疏风，通络止痛的功效。</功效>
+	<应用>
+		<para>
+			临床多用于温病发热，风湿热痹等证。
+		</para>
+	</应用>
+	<用法用量>煎服，9 ~ 30g。</用法用量>
+</中药>
