@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="" py="" />
+	<介绍></介绍>
+	<药性>
+		<气味></气味>
+		<归经></归经>
+		<毒性></毒性>
+	</药性>
+	<功效></功效>
+	<应用>
+		<para>
+			<title></title>
+		</para>
+		<para>
+			<title></title>
+		</para>
+		<para>
+			<title></title>
+		</para>
+		<para>
+			<title></title>
+		</para>
+		<para>
+		</para>
+	</应用>
+	<用法用量></用法用量>
+	<使用注意></使用注意>
+	<鉴别用药></鉴别用药>
+	<其他></其他>
+	<附药></附药>
+</中药>
