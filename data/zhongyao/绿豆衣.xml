@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="绿豆衣" py="lǜ,dòu,yī" />
+	<介绍>本品为豆科植物绿豆的种皮。将绿豆用清水浸泡后取皮晒干即成。</介绍>
+	<药性>
+		<气味>甘，寒。</气味>
+		<归经>归心，胃经。</归经>
+	</药性>
+	<功效>功同绿豆，但解暑之力不及绿豆，其清热解毒之功胜于绿豆；并能退目翳，治疗斑痘目翳。</功效>
+	<应用>
+		<para>
+		</para>
+	</应用>
+	<用法用量>煎服，6 ~ 12g。</用法用量>
+</中药>
