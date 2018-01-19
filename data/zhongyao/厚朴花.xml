@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="厚朴花" py="hòu,pò,huā" />
+	<介绍>本品为木兰科植物厚朴或凹叶厚朴的干燥花蕾。</介绍>
+	<药性>
+		<气味>苦，微温</气味>
+		<归经>归脾、胃经。</归经>
+	</药性>
+	<功效>芳香化湿，理气宽中。</功效>
+	<应用>
+		<para>
+			适用于脾胃湿阻气滞，胸脘痞闷胀满，纳谷不香。
+		</para>
+	</应用>
+	<用法用量>煎服3 ~ 9g。</用法用量>
+</中药>
