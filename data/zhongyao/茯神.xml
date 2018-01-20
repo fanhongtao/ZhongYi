@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="茯神" py="fú,shén" />
+	<介绍>本品为多孔菌科真菌茯苓中间抱有松枝或松根的白色部分。</介绍>
+	<药性>
+		<气味>甘、淡、平。</气味>
+		<归经>归心、肺、脾、肾经。</归经>
+	</药性>
+	<功效>宁心安神。</功效>
+	<应用>
+		<para>
+			适用于心神不安，惊悸，健忘，失眠。
+		</para>
+	</应用>
+	<用法用量>煎服 10 ~ 15g。</用法用量>
+</中药>
