@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="川木通" py="chuān,mù,tōng" />
+	<介绍>本品为毛茛科植物小木通或绣球藤的干燥藤茎。</介绍>
+	<药性>
+		<气味>苦，寒。</气味>
+		<归经>归心、小肠、膀胱经。</归经>
+	</药性>
+	<功效>利尿通淋，清心除烦，通经下乳。</功效>
+	<应用>
+		<para>
+			适用于淋证，水肿，心烦尿赤，口舌生疮，经闭乳少，湿热痹痛。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 6g。</用法用量>
+	<使用注意>孕妇慎用。</使用注意>
+</中药>
