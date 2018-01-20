@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="连钱草" py="lián,qián,cǎo" />
+	<介绍>本品为唇形科植物活血丹的干燥地上部分，为江苏、浙江所习用。</介绍>
+	<药性>
+		<气味>辛、微苦，微寒。</气味>
+		<归经>归肝、肾、膀胱经。</归经>
+	</药性>
+	<功效>利湿通淋，清热解毒，散瘀消肿。</功效>
+	<应用>
+		<para>
+			适用于热淋，石淋，湿热黄疸，疮痈肿痛，跌打损伤。
+		</para>
+	</应用>
+	<用法用量>煎服，15 ~ 30g。外用适量，煎汤洗。</用法用量>
+</中药>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="广金钱草" py="guǎng,jīn,qián,cǎo" />
+	<介绍>本品为豆科植物广金钱草的干燥地上部分，为广东、广西所习用。</介绍>
+	<药性>
+		<气味>甘、淡，凉。</气味>
+		<归经>归肝、肾、膀胱经。</归经>
+	</药性>
+	<功效>利湿退黄，利尿通淋。</功效>
+	<应用>
+		<para>
+			适用于黄疸尿赤，热淋，石淋，小便涩痛，水肿尿少。
+		</para>
+	</应用>
+	<用法用量>煎服，15 ~ 30g。</用法用量>
+</中药>
