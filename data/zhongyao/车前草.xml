@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="车前草" py="chē,qián,cǎo" />
+	<介绍>本品为车前科植物车前或平车前的干燥全草。</介绍>
+	<药性>
+		<气味>甘，寒。</气味>
+		<归经>归肝、肾、肺、小肠经。</归经>
+	</药性>
+	<功效>清热利尿通淋，祛痰，凉血，解毒。</功效>
+	<应用>
+		<para>
+			适用于热淋涩痛，水肿尿少，暑湿泄泻，痰热咳嗽，吐血衄血，痈肿疮毒。
+		</para>
+	</应用>
+	<用法用量>煎服9 ~ 30g。</用法用量>
+</中药>
