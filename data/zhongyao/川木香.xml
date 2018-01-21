@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="川木香" py="chuān,mù,xiāng" />
+	<介绍>本品为菊科植物川木香或灰毛川木香的干燥根。</介绍>
+	<药性>
+		<气味>辛、苦，温。</气味>
+		<归经>归脾、胃、大肠、胆经。</归经>
+	</药性>
+	<功效>行气止痛。</功效>
+	<应用>
+		<para>
+			用于胸胁、脘腹胀痛，肠鸣腹泻，里急后重。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 9g。</用法用量>
+</中药>

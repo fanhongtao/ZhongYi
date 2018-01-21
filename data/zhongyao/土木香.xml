@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="土木香" py="tǔ,mù,xiāng" />
+	<介绍>本品为菊科植物土木香的干燥根。</介绍>
+	<药性>
+		<气味>辛、苦，温。</气味>
+		<归经>归肝、脾经。</归经>
+	</药性>
+	<功效>功能健脾和胃，行气止痛，安胎。</功效>
+	<应用>
+		<para>
+			适用于胸胁、脘腹胀痛，呕吐泻痢，胸胁挫伤，岔气作痛，胎动不安。
+		</para>
+	</应用>
+	<用法用量>3 ~ 9g，多入丸散服。</用法用量>
+</中药>
