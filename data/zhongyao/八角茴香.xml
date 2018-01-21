@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="八角茴香" py="bā,jiǎo,huí,xiāng" />
+	<介绍>本品为木兰科植物八角茴香的干燥成熟果实。又名大茴香、八角。主产于亚热带地区。生用或盐水炒用。</介绍>
+	<药性>
+		<气味>辛，温。</气味>
+		<归经>归肝、肾、脾、胃经。</归经>
+	</药性>
+	<功效>温阳散寒，理气止痛。</功效>
+	<应用>
+		<para>
+			适用于寒疝腹痛，肾虚腰痛，胃寒呕吐，脘腹冷痛。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 6g。</用法用量>
+</中药>
