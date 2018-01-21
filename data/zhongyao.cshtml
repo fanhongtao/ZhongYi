@@ -35,7 +35,7 @@
 				</xs:element>
 				<xs:element name="用法用量" type="xs:string" />
 				<xs:element name="使用注意" type="xs:string" minOccurs="0" />
-				<xs:element name="鉴别用药" minOccurs="0" >
+				<xs:element name="鉴别用药" minOccurs="0" maxOccurs="unbounded" >
 					<xs:complexType mixed="true">
 						<xs:sequence>
 							<xs:element name="鉴药" type="xs:string" minOccurs="2" maxOccurs="unbounded" />
