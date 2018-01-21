@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="橘核" py="jú,hé" />
+	<介绍>本品为芸香科植物橘及其栽培变种大红袍、福橘的干燥成熟种子。</介绍>
+	<药性>
+		<气味>苦，平。</气味>
+		<归经>归肝、肾经。</归经>
+	</药性>
+	<功效>理气，散结，止痛。</功效>
+	<应用>
+		<para>
+			适用于疝气疼痛，睾丸肿痛，乳痈乳癖等。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 9g。</用法用量>
+</中药>

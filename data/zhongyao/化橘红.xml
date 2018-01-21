@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="化橘红" py="huà,jú,hóng" />
+	<介绍>本品为芸香科植物化州柚或柚的未成熟或接近成熟外层果皮。前者习称“毛橘红”，后者习称“光七爪”、“光五爪”。</介绍>
+	<药性>
+		<气味>辛、苦，温。</气味>
+		<归经>归肺、脾经。</归经>
+	</药性>
+	<功效>理气宽中，燥湿化痰。</功效>
+	<应用>
+		<para>
+			适用于咳嗽痰多，食积伤酒，呕恶痞闷等。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 6g。</用法用量>
+</中药>
