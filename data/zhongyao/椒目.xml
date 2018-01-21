@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="椒目" py="jiāo,mù" />
+	<介绍>本品为芸香科植物青椒或花椒的种子。</介绍>
+	<药性>
+		<气味>苦，寒。</气味>
+		<归经>归肺、肾、膀胱经。</归经>
+	</药性>
+	<功效>利水消肿，降气平喘。</功效>
+	<应用>
+		<para>
+			适用于水肿胀满、痰饮咳喘等。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 10g。</用法用量>
+</中药>
