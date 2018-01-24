@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
-	<名称 hz="六神曲" py="liù,shén,qǔ" />
+	<名称 hz="六神曲" py="liù,shén,qū" />
 	<介绍>本品为辣蓼、青蒿、杏仁等药加入面粉混合后经发酵而成的曲剂。全国各地均有生产。其制法是：取较大量面粉或麸皮，与杏仁泥、赤小豆粉，以及鲜青蒿、鲜苍耳、鲜辣蓼自然汁，混合拌匀，使干湿适宜，放入筐内，复以麻叶或楮叶，保温发酵一周，长出黄菌丝时取出，切成小块，晒干即成。生用或炒用。</介绍>
 	<药性>
 		<气味>甘、辛，温。</气味>
