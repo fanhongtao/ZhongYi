@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="茺蔚子" py="chōng,wèi,zǐ" />
+	<介绍>本品为唇形科植物益母草的干燥成熟果实。</介绍>
+	<药性>
+		<气味>辛、苦，微寒。</气味>
+		<归经>归心包、肝经。</归经>
+	</药性>
+	<功效>活血调经，清肝明目。</功效>
+	<应用>
+		<para>
+			适用于月经不调，闭经痛经，目赤翳障，头晕胀痛。
+		</para>
+	</应用>
+	<用法用量>煎服，5 ~ 10g。</用法用量>
+	<使用注意>瞳孔散大者慎用。</使用注意>
+</中药>
