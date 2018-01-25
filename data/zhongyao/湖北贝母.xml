@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="湖北贝母" py="hú,běi,bèi,mǔ" />
+	<介绍>本品为百合科植物湖北贝母的干燥鳞茎。</介绍>
+	<药性>
+		<气味>微苦，凉。</气味>
+		<归经>归肺、心经。</归经>
+	</药性>
+	<功效>清热化痰，止咳，散结。</功效>
+	<应用>
+		<para>
+			适用于热痰咳嗽，瘰疬痰核，痈肿疮毒。
+		</para>
+	</应用>
+	<用法用量>3 ~ 9g，研粉冲服。</用法用量>
+	<使用注意>本品不宜与川乌、草乌、附子同用。</使用注意>
+</中药>
