@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="金沸草" py="jīn,fèi,cǎo" />
+	<介绍>本品为菊科植物条叶旋覆花或旋覆花的干燥地上部分。</介绍>
+	<药性>
+		<气味>苦、辛、咸，温。</气味>
+		<归经>归肺、大肠经。</归经>
+	</药性>
+	<功效>降气，消痰，行水。</功效>
+	<应用>
+		<para>
+			适用于外感风寒，痰饮蓄积，咳喘痰多，胸膈痞满。
+		</para>
+	</应用>
+	<用法用量>煎服，5 ~ 10g。</用法用量>
+</中药>
