@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="皂角刺" py="zào,jiǎo,cì" />
+	<介绍>本品为豆科植物皂荚的干燥棘刺，又名皂角针。</介绍>
+	<药性>
+		<气味>辛、温。</气味>
+		<归经>归肝、胃经。</归经>
+	</药性>
+	<功效>消肿托毒，排脓，杀虫。</功效>
+	<应用>
+		<para>
+			适用于痈疽初起或脓成不溃，外治疥癣麻风。
+		</para>
+	</应用>
+	<用法用量>煎服3 ~ 10g。外用适量，醋蒸取汁涂患处。</用法用量>
+</中药>
