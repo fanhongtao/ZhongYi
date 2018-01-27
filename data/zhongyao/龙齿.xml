@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="龙齿" py="lóng,chǐ" />
+	<介绍>本品为古代哺乳动物如三趾马类、犀类、鹿类、牛类、象类等的牙齿化石。</介绍>
+	<药性>
+		<气味>甘、涩，凉。</气味>
+		<归经>归心、肝经。</归经>
+	</药性>
+	<功效>镇惊安神。</功效>
+	<应用>
+		<para>
+			主治惊痫癫狂、心悸怔忡、失眠多梦。
+		</para>
+	</应用>
+	<用法用量>煎服，15 ~ 30g，先煎。</用法用量>
+</中药>
