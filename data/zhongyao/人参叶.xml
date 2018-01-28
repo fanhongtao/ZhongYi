@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="人参叶" py="rén,shēn,yè" />
+	<介绍>本品为五加科植物人参的干燥叶。</介绍>
+	<药性>
+		<气味>苦、甘，寒。</气味>
+		<归经>归肺、胃经。</归经>
+	</药性>
+	<功效>补气，益肺，祛暑，生津。</功效>
+	<应用>
+		<para>
+			适用于气虚咳嗽，暑热烦躁，津伤口渴，头目不清，四肢倦乏。
+		</para>
+	</应用>
+	<用法用量>煎服，3 ~ 9g。</用法用量>
+	<使用注意>不宜与藜芦、五灵脂同用。</使用注意>
+</中药>
