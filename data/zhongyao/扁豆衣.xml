@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="扁豆衣" py="biǎn,dòu,yī" />
+	<介绍>本品为豆科植物扁豆的种皮。性能功效与扁豆相似而健脾之力略逊，但无壅滞之弊，偏于化湿。</介绍>
+	<药性>
+		<气味>甘，微温。</气味>
+		<归经>归脾、胃经。</归经>
+	</药性>
+	<功效>健脾化湿，和中消暑。</功效>
+	<应用>
+		<para>
+			主治脾虚有湿或暑湿所致的吐泻及脚气浮肿。
+		</para>
+	</应用>
+	<用法用量>煎服，5 ~ 10g。</用法用量>
+</中药>
