@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="安息香" py="ān,xī,xiāng" />
+	<介绍>本品为安息香科植物白花树的干燥树脂。</介绍>
+	<药性>
+		<气味>辛、苦，平。</气味>
+		<归经>归心、脾经。</归经>
+	</药性>
+	<功效>开窍醒神，行气活血，止痛。</功效>
+	<应用>
+		<para>
+			适用于中风痰厥，气郁暴厥，中恶昏迷，心腹疼痛，产后血晕，小儿惊风。
+		</para>
+	</应用>
+	<用法用量>0.6~ 1.5g，多入丸散用。</用法用量>
+</中药>
