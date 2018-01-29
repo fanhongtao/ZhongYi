@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="脐带" py="qí,dài" />
+	<介绍>本品为胎儿的脐带。系将新鲜脐带洗净，用金银花、甘草及黄酒同煮，烘干入药。</介绍>
+	<药性>
+		<气味>甘、咸，温。</气味>
+		<归经>归肾经。</归经>
+	</药性>
+	<功效>补肾，纳气，敛汗。</功效>
+	<应用>
+		<para>
+			主治肾虚喘咳、盗汗。
+		</para>
+	</应用>
+	<用法用量>煎服，1 ~ 2条；研末服，1.5 ~ 3g。</用法用量>
+</中药>
