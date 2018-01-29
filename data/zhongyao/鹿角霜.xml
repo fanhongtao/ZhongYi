@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="鹿角霜" py="lù,jiǎo,shuāng" />
+	<介绍>本品为鹿角去胶质的角块。</介绍>
+	<药性>
+		<气味>咸、涩，温。</气味>
+		<归经>归肝、肾经。</归经>
+	</药性>
+	<功效>温肾助阳，收敛止血。</功效>
+	<应用>
+		<para>
+			适用于脾肾阳虚，白带过多，遗尿尿频，崩漏下血，疮疡不敛。
+		</para>
+	</应用>
+	<用法用量>煎服，9 ~ 15g，先煎。</用法用量>
+	<使用注意>阴虚火旺者忌服。</使用注意>
+</中药>
