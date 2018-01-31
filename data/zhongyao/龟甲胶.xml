@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="龟甲胶" py="guī,jiǎ,jiāo" />
+	<介绍>本品为龟甲经水煎煮、浓缩制成的固体胶。</介绍>
+	<药性>
+		<气味>咸、甘，凉。</气味>
+		<归经>归肝、肾、心经。</归经>
+	</药性>
+	<功效>滋阴，养血，止血。</功效>
+	<应用>
+		<para>
+			适用于阴虚潮热，骨蒸盗汗，腰膝酸软，血虚萎黄，崩漏带下。
+		</para>
+	</应用>
+	<用法用量>3 ~ 9g，烊化兑服。</用法用量>
+</中药>
