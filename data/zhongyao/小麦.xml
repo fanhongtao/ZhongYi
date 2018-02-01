@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="小麦" py="xiǎo,mài" />
+	<介绍>本品为禾本科植物小麦的干燥成熟果实。</介绍>
+	<药性>
+		<气味>甘，微寒。</气味>
+		<归经>归心经。</归经>
+	</药性>
+	<功效>养心除烦。</功效>
+	<应用>
+		<para>
+			主治心神不宁，烦躁失眠及妇人脏躁证。
+		</para>
+	</应用>
+	<用法用量>煎服，30 ~ 60g。</用法用量>
+</中药>
