@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="荷梗" py="hé,gěng" />
+	<介绍>本品为睡莲科植物莲的干燥叶柄及花柄。</介绍>
+	<药性>
+		<气味>苦，平。</气味>
+		<归经>归肺、脾、胃经。</归经>
+	</药性>
+	<功效>通气宽胸，和胃安胎。</功效>
+	<应用>
+		<para>
+			主治外感暑湿、胸闷不畅、妊娠呕吐、胎动不安。
+		</para>
+	</应用>
+	<用法用量>煎服，10 ~ 15g。</用法用量>
+</中药>
