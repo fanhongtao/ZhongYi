@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
+	<名称 hz="蜜蜡" py="mì,là" />
+	<介绍>本品为蜜蜂科昆虫中华蜜蜂或意大利蜜蜂分泌的蜡。</介绍>
+	<药性>
+		<气味>甘，微温。</气味>
+		<归经>归脾经。</归经>
+	</药性>
+	<功效>解毒，敛疮，生肌，止痛。</功效>
+	<应用>
+		<para>
+			外用于溃疡不敛，臁疮糜烂，外伤破溃，烧烫伤。
+		</para>
+	</应用>
+	<用法用量>外用适量，熔化敷患处；常作成药赋形剂及油膏基质。</用法用量>
+</中药>
