@@ -28,13 +28,28 @@ namespace ZhongYi
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			showForm(new ZhongYaoForm(), zhongyaoPage);
+			
 			Logger.SetTextBox(logTextBox);
 			Logger.info("Program start.");
+			
+			Data.Instance.Load();
 		}
 		
 		void CleanLogButtonClick(object sender, System.EventArgs e)
 		{
 			Logger.clean();
+		}
+		
+		// 在TabPage中显示对应的Form
+		private void showForm(Form form, Control tabPage)
+		{
+			form.TopLevel = false;
+			form.Parent = tabPage;
+			form.ControlBox = false;
+			form.Dock = System.Windows.Forms.DockStyle.Fill;
+			form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			form.Show();
 		}
 	}
 }
