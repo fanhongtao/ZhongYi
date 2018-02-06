@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <中药 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../zhongyao.cshtml">
-	<名称 hz="葱白 " py="cōng,bái"/>
+	<名称 hz="葱白" py="cōng,bái"/>
 	<介绍>本品为百合科植物葱 近根部的鳞茎。我国各地均有种植。随时可采，采挖后，切去须根及叶，剥去外膜。鲜用。</介绍>
 	<药性>
 		<气味>辛，温。</气味>
