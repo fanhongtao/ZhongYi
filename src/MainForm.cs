@@ -28,6 +28,13 @@ namespace ZhongYi
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			Logger.SetTextBox(logTextBox);
+			Logger.info("Program start.");
+		}
+		
+		void CleanLogButtonClick(object sender, System.EventArgs e)
+		{
+			Logger.clean();
 		}
 	}
 }
