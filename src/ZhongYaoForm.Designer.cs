@@ -40,6 +40,7 @@ namespace ZhongYi
 			this.inputComboBox = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.outputText = new System.Windows.Forms.RichTextBox();
+			this.queryListBox = new System.Windows.Forms.ListBox();
 			this.inputPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -62,7 +63,6 @@ namespace ZhongYi
 			this.inputComboBox.Name = "inputComboBox";
 			this.inputComboBox.Size = new System.Drawing.Size(199, 20);
 			this.inputComboBox.TabIndex = 1;
-			this.inputComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InputComboBox_KeyDown);
 			// 
 			// label1
 			// 
@@ -83,11 +83,22 @@ namespace ZhongYi
 			this.outputText.TabIndex = 3;
 			this.outputText.Text = "";
 			// 
+			// queryListBox
+			// 
+			this.queryListBox.FormattingEnabled = true;
+			this.queryListBox.ItemHeight = 12;
+			this.queryListBox.Location = new System.Drawing.Point(75, 29);
+			this.queryListBox.Name = "queryListBox";
+			this.queryListBox.Size = new System.Drawing.Size(199, 88);
+			this.queryListBox.TabIndex = 2;
+			this.queryListBox.Visible = false;
+			// 
 			// ZhongYaoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.queryListBox);
 			this.Controls.Add(this.outputText);
 			this.Controls.Add(this.inputPanel);
 			this.Name = "ZhongYaoForm";
@@ -95,6 +106,7 @@ namespace ZhongYi
 			this.inputPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.ListBox queryListBox;
 		private System.Windows.Forms.RichTextBox outputText;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.ComboBox inputComboBox;

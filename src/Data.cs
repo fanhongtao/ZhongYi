@@ -54,6 +54,17 @@ namespace ZhongYi
 			return null;
 		}
 		
+		public List<ZhongYaoInfo> queryZhongYao(string str)
+		{
+			List<ZhongYaoInfo> list = new List<ZhongYaoInfo>();
+			foreach (ZhongYaoInfo info in zhongyaos) {
+				if (info.name.Contains(str)) {
+					list.Add(info);
+				}
+			}
+			return list;
+		}
+		
 		private void loadZhongYao()
 		{
 			DirectoryInfo dir = new DirectoryInfo("data/zhongyao");
