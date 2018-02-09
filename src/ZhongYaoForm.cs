@@ -39,7 +39,17 @@ namespace ZhongYi
 			inputComboBox.DropDown += new EventHandler(inputComboBox_DropDown);
 			inputComboBox.KeyDown += new KeyEventHandler(inputComboBox_KeyDown);
 			inputComboBox.SelectedValueChanged += new EventHandler(inputComboBox_SelectedIndexChanged);
+			
 			queryListBox.DisplayMember = "name";
+			queryListBox.MouseClick += new MouseEventHandler(queryListBox_MouseClick);
+		}
+		
+		private void queryListBox_MouseClick(object sender, MouseEventArgs e)
+		{
+			int index = queryListBox.IndexFromPoint(e.X, e.Y);
+			if (index != -1) {
+				queryListBox_Selected();
+			}
 		}
 		
 		private void inputComboBox_DropDown(object sender, EventArgs e)
@@ -146,28 +156,28 @@ namespace ZhongYi
 				}
 			} else if (e.KeyCode == Keys.Enter) {
 				if (queryListBox.SelectedIndex != -1) {
-					//deleteTextUpdateHandler();
-					string result = ((ZhongYaoInfo)queryListBox.Items[queryListBox.SelectedIndex]).name;
-					inputComboBox.Text = result;
-					inputComboBox.SelectionStart = inputComboBox.Text.Length;
-					
-					string line = inputComboBox.Text.Trim();
-					if (line.Length == 0) {
-						return;
-					}
-					
-					// 将查询历史记录添加到 ComboBox
-					inputComboBox.Items.Remove(line);
-					inputComboBox.Items.Insert(0, line);
-					inputComboBox.Text = line;
-					inputComboBox.SelectionStart = inputComboBox.Text.Length;
-					
-					inputCombox_Enter();
-					
-					addTextUpdateHandler();
-					queryListBox.Visible = false;
+					queryListBox_Selected();
 				}
 			}
+		}
+		
+		private void queryListBox_Selected() {
+			deleteTextUpdateHandler();
+			
+			string line = ((ZhongYaoInfo)queryListBox.Items[queryListBox.SelectedIndex]).name;
+			
+			// 将查询历史记录添加到 ComboBox
+			inputComboBox.Items.Remove(line);
+			inputComboBox.Items.Insert(0, line);
+			
+			// 更新 ComboBox 文本框中显示的（输入）值
+			inputComboBox.Text = line;
+			inputComboBox.SelectionStart = inputComboBox.Text.Length;
+			
+			inputCombox_Enter();
+			
+			addTextUpdateHandler();
+			queryListBox.Visible = false;
 		}
 		
 		private void inputCombox_Enter()
