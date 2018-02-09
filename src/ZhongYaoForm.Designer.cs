@@ -41,7 +41,13 @@ namespace ZhongYi
 			this.label1 = new System.Windows.Forms.Label();
 			this.outputText = new System.Windows.Forms.RichTextBox();
 			this.queryListBox = new System.Windows.Forms.ListBox();
+			this.mainSplitContainer = new System.Windows.Forms.SplitContainer();
+			this.zhongyaoListBox = new System.Windows.Forms.ListBox();
 			this.inputPanel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).BeginInit();
+			this.mainSplitContainer.Panel1.SuspendLayout();
+			this.mainSplitContainer.Panel2.SuspendLayout();
+			this.mainSplitContainer.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// inputPanel
@@ -76,10 +82,10 @@ namespace ZhongYi
 			// outputText
 			// 
 			this.outputText.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.outputText.Location = new System.Drawing.Point(0, 35);
+			this.outputText.Location = new System.Drawing.Point(0, 0);
 			this.outputText.Name = "outputText";
 			this.outputText.ReadOnly = true;
-			this.outputText.Size = new System.Drawing.Size(284, 226);
+			this.outputText.Size = new System.Drawing.Size(240, 226);
 			this.outputText.TabIndex = 3;
 			this.outputText.Text = "";
 			// 
@@ -93,19 +99,52 @@ namespace ZhongYi
 			this.queryListBox.TabIndex = 2;
 			this.queryListBox.Visible = false;
 			// 
+			// mainSplitContainer
+			// 
+			this.mainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mainSplitContainer.Location = new System.Drawing.Point(0, 35);
+			this.mainSplitContainer.Name = "mainSplitContainer";
+			// 
+			// mainSplitContainer.Panel1
+			// 
+			this.mainSplitContainer.Panel1.Controls.Add(this.zhongyaoListBox);
+			// 
+			// mainSplitContainer.Panel2
+			// 
+			this.mainSplitContainer.Panel2.Controls.Add(this.outputText);
+			this.mainSplitContainer.Size = new System.Drawing.Size(284, 226);
+			this.mainSplitContainer.SplitterDistance = 40;
+			this.mainSplitContainer.TabIndex = 4;
+			// 
+			// zhongyaoListBox
+			// 
+			this.zhongyaoListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.zhongyaoListBox.FormattingEnabled = true;
+			this.zhongyaoListBox.ItemHeight = 12;
+			this.zhongyaoListBox.Location = new System.Drawing.Point(0, 0);
+			this.zhongyaoListBox.Name = "zhongyaoListBox";
+			this.zhongyaoListBox.Size = new System.Drawing.Size(40, 226);
+			this.zhongyaoListBox.TabIndex = 0;
+			// 
 			// ZhongYaoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
 			this.Controls.Add(this.queryListBox);
-			this.Controls.Add(this.outputText);
+			this.Controls.Add(this.mainSplitContainer);
 			this.Controls.Add(this.inputPanel);
 			this.Name = "ZhongYaoForm";
 			this.Text = "ZhongYaoForm";
 			this.inputPanel.ResumeLayout(false);
+			this.mainSplitContainer.Panel1.ResumeLayout(false);
+			this.mainSplitContainer.Panel2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).EndInit();
+			this.mainSplitContainer.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.ListBox zhongyaoListBox;
+		private System.Windows.Forms.SplitContainer mainSplitContainer;
 		private System.Windows.Forms.ListBox queryListBox;
 		private System.Windows.Forms.RichTextBox outputText;
 		private System.Windows.Forms.Label label1;

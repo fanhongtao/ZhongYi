@@ -41,14 +41,26 @@ namespace ZhongYi
 			inputComboBox.SelectedValueChanged += new EventHandler(inputComboBox_SelectedIndexChanged);
 			
 			queryListBox.DisplayMember = "name";
-			queryListBox.MouseClick += new MouseEventHandler(queryListBox_MouseClick);
+			queryListBox.MouseClick += new MouseEventHandler(listBox_MouseClick);
+			
+			zhongyaoListBox.DisplayMember = "name";
+			zhongyaoListBox.MouseClick += new MouseEventHandler(listBox_MouseClick);
+			
+			this.Load += new EventHandler(ZhongYaoForm_Load);
 		}
 		
-		private void queryListBox_MouseClick(object sender, MouseEventArgs e)
+		private void ZhongYaoForm_Load(object sender, EventArgs e)
 		{
-			int index = queryListBox.IndexFromPoint(e.X, e.Y);
+			List<ZhongYaoInfo> listQuery = Data.Instance.queryZhongYao("");
+			zhongyaoListBox.Items.AddRange(listQuery.ToArray());
+		}
+		
+		private void listBox_MouseClick(object sender, MouseEventArgs e)
+		{
+			ListBox listbox = (ListBox)sender;
+			int index = listbox.IndexFromPoint(e.X, e.Y);
 			if (index != -1) {
-				queryListBox_Selected();
+				listBox_Selected(listbox);
 			}
 		}
 		
@@ -156,15 +168,15 @@ namespace ZhongYi
 				}
 			} else if (e.KeyCode == Keys.Enter) {
 				if (queryListBox.SelectedIndex != -1) {
-					queryListBox_Selected();
+					listBox_Selected(queryListBox);
 				}
 			}
 		}
 		
-		private void queryListBox_Selected() {
+		private void listBox_Selected(ListBox listbox) {
 			deleteTextUpdateHandler();
 			
-			string line = ((ZhongYaoInfo)queryListBox.Items[queryListBox.SelectedIndex]).name;
+			string line = ((ZhongYaoInfo)listbox.Items[listbox.SelectedIndex]).name;
 			
 			// 将查询历史记录添加到 ComboBox
 			inputComboBox.Items.Remove(line);

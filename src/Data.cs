@@ -80,6 +80,11 @@ namespace ZhongYi
 				XmlElement root = doc.DocumentElement;   //获取根节点
 				loadZhongYao(root);
 			}
+			
+			// 中药按照拼音字母顺序排序
+			// 逗号“,”的ASCII码为“2C”，大于小写字母“a”（ASCII为“61”），
+			// 这样可以确保 an,z 会排在 ang 的前面。（因为 , 小于 g）
+			zhongyaos.Sort((a,b) => string.Join(",", a.pinyin).CompareTo(string.Join(",", b.pinyin)));
 		}
 		
 		private void loadZhongYao(XmlElement root)
