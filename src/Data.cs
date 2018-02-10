@@ -129,11 +129,18 @@ namespace ZhongYi
 			{
 				XmlElement element = (XmlElement)jianbie;
 				JianBieInfo jbInfo = new JianBieInfo();
-				jbInfo.neirong = jianbie.InnerText;
+				List<XmlNode> list = new List<XmlNode>();
 				foreach (XmlNode jy in element.GetElementsByTagName("鉴药"))
 				{
 					jbInfo.jianyao.Add(jy.InnerText);
+					list.Add(jy);
 				}
+				
+				// 删除“鉴药”元素，以便正确读取“鉴别用药”的内容
+				foreach (XmlNode item in list) {
+					element.RemoveChild(item);
+				}
+				jbInfo.neirong = jianbie.InnerText.Trim(TRIM_CHARS);
 				zhongyao.jianbies.Add(jbInfo);
 			}
 			
