@@ -58,8 +58,10 @@ namespace ZhongYi
 			this.logGroupBox.Controls.Add(this.logPanel);
 			this.logGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.logGroupBox.Location = new System.Drawing.Point(0, 0);
+			this.logGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.logGroupBox.Name = "logGroupBox";
-			this.logGroupBox.Size = new System.Drawing.Size(284, 67);
+			this.logGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.logGroupBox.Size = new System.Drawing.Size(379, 90);
 			this.logGroupBox.TabIndex = 1;
 			this.logGroupBox.TabStop = false;
 			this.logGroupBox.Text = "Log";
@@ -67,10 +69,11 @@ namespace ZhongYi
 			// logTextBox
 			// 
 			this.logTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.logTextBox.Location = new System.Drawing.Point(3, 42);
+			this.logTextBox.Location = new System.Drawing.Point(4, 56);
+			this.logTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.logTextBox.Name = "logTextBox";
 			this.logTextBox.ReadOnly = true;
-			this.logTextBox.Size = new System.Drawing.Size(278, 22);
+			this.logTextBox.Size = new System.Drawing.Size(371, 30);
 			this.logTextBox.TabIndex = 0;
 			this.logTextBox.Text = "";
 			// 
@@ -78,16 +81,18 @@ namespace ZhongYi
 			// 
 			this.logPanel.Controls.Add(this.cleanLogButton);
 			this.logPanel.Dock = System.Windows.Forms.DockStyle.Top;
-			this.logPanel.Location = new System.Drawing.Point(3, 17);
+			this.logPanel.Location = new System.Drawing.Point(4, 23);
+			this.logPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.logPanel.Name = "logPanel";
-			this.logPanel.Size = new System.Drawing.Size(278, 25);
+			this.logPanel.Size = new System.Drawing.Size(371, 33);
 			this.logPanel.TabIndex = 1;
 			// 
 			// cleanLogButton
 			// 
-			this.cleanLogButton.Location = new System.Drawing.Point(1, 3);
+			this.cleanLogButton.Location = new System.Drawing.Point(1, 4);
+			this.cleanLogButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.cleanLogButton.Name = "cleanLogButton";
-			this.cleanLogButton.Size = new System.Drawing.Size(75, 23);
+			this.cleanLogButton.Size = new System.Drawing.Size(100, 31);
 			this.cleanLogButton.TabIndex = 0;
 			this.cleanLogButton.Text = "清除日志";
 			this.cleanLogButton.UseVisualStyleBackColor = true;
@@ -97,6 +102,7 @@ namespace ZhongYi
 			// 
 			this.mainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainSplitContainer.Location = new System.Drawing.Point(0, 0);
+			this.mainSplitContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.mainSplitContainer.Name = "mainSplitContainer";
 			this.mainSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -107,8 +113,9 @@ namespace ZhongYi
 			// mainSplitContainer.Panel2
 			// 
 			this.mainSplitContainer.Panel2.Controls.Add(this.logGroupBox);
-			this.mainSplitContainer.Size = new System.Drawing.Size(284, 261);
-			this.mainSplitContainer.SplitterDistance = 190;
+			this.mainSplitContainer.Size = new System.Drawing.Size(379, 348);
+			this.mainSplitContainer.SplitterDistance = 253;
+			this.mainSplitContainer.SplitterWidth = 5;
 			this.mainSplitContainer.TabIndex = 1;
 			// 
 			// mainTabControl
@@ -116,27 +123,31 @@ namespace ZhongYi
 			this.mainTabControl.Controls.Add(this.zhongyaoPage);
 			this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainTabControl.Location = new System.Drawing.Point(0, 0);
+			this.mainTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.mainTabControl.Name = "mainTabControl";
 			this.mainTabControl.SelectedIndex = 0;
-			this.mainTabControl.Size = new System.Drawing.Size(284, 190);
+			this.mainTabControl.Size = new System.Drawing.Size(379, 253);
 			this.mainTabControl.TabIndex = 1;
 			// 
 			// zhongyaoPage
 			// 
-			this.zhongyaoPage.Location = new System.Drawing.Point(4, 22);
+			this.zhongyaoPage.Location = new System.Drawing.Point(4, 26);
+			this.zhongyaoPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.zhongyaoPage.Name = "zhongyaoPage";
-			this.zhongyaoPage.Padding = new System.Windows.Forms.Padding(3);
-			this.zhongyaoPage.Size = new System.Drawing.Size(276, 164);
+			this.zhongyaoPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.zhongyaoPage.Size = new System.Drawing.Size(371, 223);
 			this.zhongyaoPage.TabIndex = 0;
 			this.zhongyaoPage.Text = "中药查询";
 			this.zhongyaoPage.UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.ClientSize = new System.Drawing.Size(379, 348);
 			this.Controls.Add(this.mainSplitContainer);
+			this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "MainForm";
 			this.Text = "ZhongYi";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

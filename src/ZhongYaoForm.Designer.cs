@@ -65,9 +65,9 @@ namespace ZhongYi
 			// 
 			this.inputComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputComboBox.FormattingEnabled = true;
-			this.inputComboBox.Location = new System.Drawing.Point(75, 10);
+			this.inputComboBox.Location = new System.Drawing.Point(104, 10);
 			this.inputComboBox.Name = "inputComboBox";
-			this.inputComboBox.Size = new System.Drawing.Size(199, 20);
+			this.inputComboBox.Size = new System.Drawing.Size(170, 20);
 			this.inputComboBox.TabIndex = 1;
 			// 
 			// label1
@@ -75,7 +75,7 @@ namespace ZhongYi
 			this.label1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.label1.Location = new System.Drawing.Point(10, 10);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(65, 25);
+			this.label1.Size = new System.Drawing.Size(94, 25);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "中药查询：";
 			// 
@@ -93,9 +93,9 @@ namespace ZhongYi
 			// 
 			this.queryListBox.FormattingEnabled = true;
 			this.queryListBox.ItemHeight = 12;
-			this.queryListBox.Location = new System.Drawing.Point(75, 29);
+			this.queryListBox.Location = new System.Drawing.Point(104, 29);
 			this.queryListBox.Name = "queryListBox";
-			this.queryListBox.Size = new System.Drawing.Size(199, 88);
+			this.queryListBox.Size = new System.Drawing.Size(170, 88);
 			this.queryListBox.TabIndex = 2;
 			this.queryListBox.Visible = false;
 			// 
