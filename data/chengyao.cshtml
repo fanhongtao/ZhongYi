@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="成药">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="名称">
+					<xs:complexType>
+						<xs:attribute name="hz" type="xs:string" use="required" />
+						<xs:attribute name="py" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="成份">
+					<xs:complexType mixed="true">
+						<xs:sequence>
+							<xs:element name="辅料" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="性状" type="xs:string" />
+				<xs:element name="功能主治" type="xs:string" />
+				<xs:element name="规格" type="xs:string" />
+				<xs:element name="用法用量" type="xs:string" />
+				<xs:element name="不良反应" type="xs:string" />
+				<xs:element name="禁忌" type="xs:string" />
+				<xs:element name="注意事项">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="para" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="药物相互作用" type="xs:string" minOccurs="0" />
+				<xs:element name="储藏" type="xs:string" />
+				<xs:element name="包装" type="xs:string" />
+				<xs:element name="有效期" type="xs:string" />
+				<xs:element name="执行标准" type="xs:string" />
+				<xs:element name="批准文号" type="xs:string" />
+				<xs:element name="说明书修订日期" type="xs:string" />
+				<xs:element name="生产企业">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="企业名称" type="xs:string" />
+							<xs:element name="生产地址" type="xs:string" />
+							<xs:element name="邮政编码" type="xs:string" />
+							<xs:element name="电话号码" type="xs:string" />
+							<xs:element name="传真号码" type="xs:string" />
+							<xs:element name="网址" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="其他"  minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OTC"  type="xs:string"  minOccurs="0" />
+							<xs:element name="中国药品电子监管码" type="xs:string"  minOccurs="0" />
+							<xs:element name="条形码" type="xs:string"  minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
