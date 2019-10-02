@@ -35,7 +35,7 @@
 				<xs:element name="有效期" type="xs:string" />
 				<xs:element name="执行标准" type="xs:string" />
 				<xs:element name="批准文号" type="xs:string" />
-				<xs:element name="说明书修订日期" type="xs:string" />
+				<xs:element name="说明书修订日期" type="xs:string"  minOccurs="0" />
 				<xs:element name="生产企业">
 					<xs:complexType>
 						<xs:sequence>
@@ -44,6 +44,7 @@
 							<xs:element name="邮政编码" type="xs:string" />
 							<xs:element name="电话号码" type="xs:string" />
 							<xs:element name="传真号码" type="xs:string" />
+							<xs:element name="注册地址" type="xs:string" minOccurs="0" />
 							<xs:element name="网址" type="xs:string" minOccurs="0" />
 						</xs:sequence>
 					</xs:complexType>
@@ -52,6 +53,8 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="OTC"  type="xs:string"  minOccurs="0" />
+							<xs:element name="核准日期"  type="xs:string"  minOccurs="0" />
+							<xs:element name="修改日期"  type="xs:string"  minOccurs="0" />
 							<xs:element name="中国药品电子监管码" type="xs:string"  minOccurs="0" />
 							<xs:element name="条形码" type="xs:string"  minOccurs="0" />
 						</xs:sequence>
