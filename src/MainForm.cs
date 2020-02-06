@@ -29,6 +29,7 @@ namespace ZhongYi
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 			showForm(new ZhongYaoForm(), zhongyaoPage);
+			showForm(new ZuFangForm(), zuFangPage);
 			
 			Logger.SetTextBox(logTextBox);
 			Logger.info("Program start.");

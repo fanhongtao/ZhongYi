@@ -74,6 +74,10 @@
       <DependentUpon>ZhongYaoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\ZhongYaoInfo.cs" />
+    <Compile Include="src\ZuFangForm.cs" />
+    <Compile Include="src\ZuFangForm.Designer.cs">
+      <DependentUpon>ZuFangForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src" />

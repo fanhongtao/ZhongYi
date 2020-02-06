@@ -43,6 +43,7 @@ namespace ZhongYi
 			this.mainSplitContainer = new System.Windows.Forms.SplitContainer();
 			this.mainTabControl = new System.Windows.Forms.TabControl();
 			this.zhongyaoPage = new System.Windows.Forms.TabPage();
+			this.zuFangPage = new System.Windows.Forms.TabPage();
 			this.logGroupBox.SuspendLayout();
 			this.logPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).BeginInit();
@@ -58,9 +59,9 @@ namespace ZhongYi
 			this.logGroupBox.Controls.Add(this.logPanel);
 			this.logGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.logGroupBox.Location = new System.Drawing.Point(0, 0);
-			this.logGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.logGroupBox.Margin = new System.Windows.Forms.Padding(4);
 			this.logGroupBox.Name = "logGroupBox";
-			this.logGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.logGroupBox.Padding = new System.Windows.Forms.Padding(4);
 			this.logGroupBox.Size = new System.Drawing.Size(379, 90);
 			this.logGroupBox.TabIndex = 1;
 			this.logGroupBox.TabStop = false;
@@ -69,11 +70,11 @@ namespace ZhongYi
 			// logTextBox
 			// 
 			this.logTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.logTextBox.Location = new System.Drawing.Point(4, 56);
-			this.logTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.logTextBox.Location = new System.Drawing.Point(4, 60);
+			this.logTextBox.Margin = new System.Windows.Forms.Padding(4);
 			this.logTextBox.Name = "logTextBox";
 			this.logTextBox.ReadOnly = true;
-			this.logTextBox.Size = new System.Drawing.Size(371, 30);
+			this.logTextBox.Size = new System.Drawing.Size(371, 26);
 			this.logTextBox.TabIndex = 0;
 			this.logTextBox.Text = "";
 			// 
@@ -81,8 +82,8 @@ namespace ZhongYi
 			// 
 			this.logPanel.Controls.Add(this.cleanLogButton);
 			this.logPanel.Dock = System.Windows.Forms.DockStyle.Top;
-			this.logPanel.Location = new System.Drawing.Point(4, 23);
-			this.logPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.logPanel.Location = new System.Drawing.Point(4, 27);
+			this.logPanel.Margin = new System.Windows.Forms.Padding(4);
 			this.logPanel.Name = "logPanel";
 			this.logPanel.Size = new System.Drawing.Size(371, 33);
 			this.logPanel.TabIndex = 1;
@@ -90,7 +91,7 @@ namespace ZhongYi
 			// cleanLogButton
 			// 
 			this.cleanLogButton.Location = new System.Drawing.Point(1, 4);
-			this.cleanLogButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cleanLogButton.Margin = new System.Windows.Forms.Padding(4);
 			this.cleanLogButton.Name = "cleanLogButton";
 			this.cleanLogButton.Size = new System.Drawing.Size(100, 31);
 			this.cleanLogButton.TabIndex = 0;
@@ -102,7 +103,7 @@ namespace ZhongYi
 			// 
 			this.mainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainSplitContainer.Location = new System.Drawing.Point(0, 0);
-			this.mainSplitContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mainSplitContainer.Margin = new System.Windows.Forms.Padding(4);
 			this.mainSplitContainer.Name = "mainSplitContainer";
 			this.mainSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -121,9 +122,10 @@ namespace ZhongYi
 			// mainTabControl
 			// 
 			this.mainTabControl.Controls.Add(this.zhongyaoPage);
+			this.mainTabControl.Controls.Add(this.zuFangPage);
 			this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainTabControl.Location = new System.Drawing.Point(0, 0);
-			this.mainTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mainTabControl.Margin = new System.Windows.Forms.Padding(4);
 			this.mainTabControl.Name = "mainTabControl";
 			this.mainTabControl.SelectedIndex = 0;
 			this.mainTabControl.Size = new System.Drawing.Size(379, 253);
@@ -131,23 +133,33 @@ namespace ZhongYi
 			// 
 			// zhongyaoPage
 			// 
-			this.zhongyaoPage.Location = new System.Drawing.Point(4, 26);
-			this.zhongyaoPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.zhongyaoPage.Location = new System.Drawing.Point(4, 30);
+			this.zhongyaoPage.Margin = new System.Windows.Forms.Padding(4);
 			this.zhongyaoPage.Name = "zhongyaoPage";
-			this.zhongyaoPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.zhongyaoPage.Size = new System.Drawing.Size(371, 223);
+			this.zhongyaoPage.Padding = new System.Windows.Forms.Padding(4);
+			this.zhongyaoPage.Size = new System.Drawing.Size(371, 219);
 			this.zhongyaoPage.TabIndex = 0;
 			this.zhongyaoPage.Text = "中药查询";
 			this.zhongyaoPage.UseVisualStyleBackColor = true;
 			// 
+			// zuFangPage
+			// 
+			this.zuFangPage.Location = new System.Drawing.Point(4, 30);
+			this.zuFangPage.Name = "zuFangPage";
+			this.zuFangPage.Padding = new System.Windows.Forms.Padding(3);
+			this.zuFangPage.Size = new System.Drawing.Size(371, 219);
+			this.zuFangPage.TabIndex = 1;
+			this.zuFangPage.Text = "组方";
+			this.zuFangPage.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(379, 348);
 			this.Controls.Add(this.mainSplitContainer);
 			this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "MainForm";
 			this.Text = "ZhongYi";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -159,6 +171,7 @@ namespace ZhongYi
 			this.mainSplitContainer.ResumeLayout(false);
 			this.mainTabControl.ResumeLayout(false);
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.TabPage zhongyaoPage;
 		private System.Windows.Forms.TabControl mainTabControl;
@@ -167,5 +180,6 @@ namespace ZhongYi
 		private System.Windows.Forms.Panel logPanel;
 		private System.Windows.Forms.RichTextBox logTextBox;
 		private System.Windows.Forms.GroupBox logGroupBox;
+		private System.Windows.Forms.TabPage zuFangPage;
 	}
 }
