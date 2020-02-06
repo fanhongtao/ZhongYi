@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
+using ZhongYi.Filter;
 
 namespace ZhongYi
 {
@@ -23,6 +24,7 @@ namespace ZhongYi
 		private char[] TRIM_CHARS = new char[] { '\n', '\r', '\t' };
 		
 		List<ZhongYaoInfo> zhongyaos;
+		NameCollections zhongyaoNameCollections;
 		
 		private static Data instance = new Data();
 		
@@ -65,6 +67,11 @@ namespace ZhongYi
 			return list;
 		}
 		
+		public List<NameInfo> queryZhongyaoName(string str)
+		{
+			return zhongyaoNameCollections.Query(str);
+		}
+		
 		private void loadZhongYao()
 		{
 			DirectoryInfo dir = new DirectoryInfo("data/zhongyao");
@@ -85,6 +92,13 @@ namespace ZhongYi
 			// 逗号“,”的ASCII码为“2C”，大于小写字母“a”（ASCII为“61”），
 			// 这样可以确保 an,z 会排在 ang 的前面。（因为 , 小于 g）
 			zhongyaos.Sort((a,b) => string.Join(",", a.pinyin).CompareTo(string.Join(",", b.pinyin)));
+			
+			var zhongyaoNames = new List<NameInfo>();
+			foreach (ZhongYaoInfo zyInfo in zhongyaos) {
+				NameInfo nameInfo = new NameInfo(zyInfo.name, zyInfo.pinyin);
+				zhongyaoNames.Add(nameInfo);
+			}
+			zhongyaoNameCollections = new NameCollections(zhongyaoNames);
 		}
 		
 		private void loadZhongYao(XmlElement root)
