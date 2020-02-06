@@ -96,6 +96,9 @@
     <EmbeddedResource Include="src\ZhongYaoForm.resx">
       <DependentUpon>ZhongYaoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\ZuFangForm.resx">
+      <DependentUpon>ZuFangForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
