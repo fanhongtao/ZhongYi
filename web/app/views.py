@@ -7,9 +7,9 @@ def index():
     return render_template("index.html",
         title = 'Home')
 
-@app.route('/zhongyaochaxun', methods=['POST', 'GET'])
+@app.route('/zhongyaochaxun')
 def zhongyaochaxun():
-    if request.method == 'POST':
-        name = request.form['yao']
-        return render_template('zhongyaochaxun.html', zhongyao=name)
-    return render_template("zhongyaochaxun.html")
+    name = request.args.get('yao')
+    if (name == None):
+        return render_template('zhongyaochaxun.html')
+    return render_template('zhongyaochaxun.html', zhongyao=name)
