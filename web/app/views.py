@@ -15,9 +15,16 @@ def zhongyaochaxun():
         return render_template('zhongyaochaxun.html')
     file = Path("../data/zhongyao/" + name + ".xml")
     if file.is_file():
-        content = read_file(file)
-        return render_template('zhongyaochaxun.html', zhongyao=content)
-    return render_template('zhongyaochaxun.html', zhongyao="没有收录：" + name)
+        return render_template('zhongyaochaxun.html', zhongyao=name)
+    return render_template('zhongyaochaxun.html', error="没有收录：" + name)
+
+@app.route('/ajax/zhongyao')
+def ajaxzhongyao():
+    name = request.args.get('name')
+    file = Path("../data/zhongyao/" + name + ".xml")
+    if file.is_file():
+        return read_file(file)
+    return None
 
 def read_file(file_path):
     with open(file_path,'r',encoding='utf-8') as f:
