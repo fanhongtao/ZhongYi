@@ -4,13 +4,14 @@
 <div id="query">
   <form id="form" method="get">
     中药名：
-    <input type="text" id="yaomin" name="yao" size="40"
+    <input id="yaoming" type="text" name="yao" size="40"
+        autocomplete="off"
         placeholder="输入中药名或拼音，按“回车”即可查询"
         {% if zhongyao %} value={{ zhongyao }} {% endif %} />
     <input type="submit" value="查询"/>
   </form>
 </div>
-<p/>
+
 <div id="result">
   {{ error }}
 </div>

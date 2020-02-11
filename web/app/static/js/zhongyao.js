@@ -1,9 +1,10 @@
 $(document).ready(function() {
   displayZhongYao();
+  bindEvents();
 });
 
 function displayZhongYao() {
-  var zhongyao =  $("#yaomin").val().trim()
+  var zhongyao =  $("#yaoming").val().trim()
   if (zhongyao.length == 0) {
     return;
   }
@@ -121,3 +122,22 @@ function getFuYao(xml) {
 function getLink(name) {
   return "<a href='" + window.location.pathname + "?yao=" + name + "'>" + name + "</a>";
 }
+
+function bindEvents() {
+  $("#yaoming").autocomplete({
+    source: function(request, response) {
+      $.ajax({
+        contentType:"application/json;charset=UTF-8",
+        url:"/ajax/zhongyaosuggestion",
+        data:{ "name":request.term },
+        dataType:"json",
+        success:function (msg) {
+          response( $.map( msg, function( item ) {
+            return {label: item.name  + " ( " + item.py + " )", value: item.name }
+          }));
+        },
+      });
+    },
+  });
+}
+

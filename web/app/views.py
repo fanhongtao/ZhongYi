@@ -1,4 +1,5 @@
-from flask import render_template, flash, redirect, request
+from flask import render_template, flash, redirect, request, send_file
+from flask import jsonify
 from app import app
 from pathlib import Path
 
@@ -30,3 +31,11 @@ def read_file(file_path):
     with open(file_path,'r',encoding='utf-8') as f:
         data = f.read()
     return data
+
+@app.route('/ajax/zhongyaosuggestion')
+def zhongyaosuggestion():
+    name = request.args.get('name')
+    list = [{'name': name, 'py': 'py'}];
+    for i in range(1, 20):
+        list.append({'name': name + "-" + str(i), 'py': 'py - ' + str(i)});
+    return jsonify(list)
