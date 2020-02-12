@@ -1,0 +1,3 @@
+
+class FinishedException(BaseException):
+  pass

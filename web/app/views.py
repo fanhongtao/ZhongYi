@@ -37,26 +37,13 @@ def read_file(file_path):
 def zhongyaosuggestion():
     name = request.args.get('name')
     ch = name[0:1]
+    byPinyin = False
     if ((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')):
-      list = queryByPinyin(name)
-    else:
-      list = queryByHanzi(name)
-    suggestions = [];
-    print("list size: " + str(len(list)))
-    for zhongyao in list:
-        suggestions.append({'name': zhongyao.name, 'py': zhongyao.pinyin});
+        byPinyin = True
+    
+    suggestions = []
+    for zhongyao in app.data.zhongyaos:
+        if zhongyao.match(name, byPinyin):
+            suggestions.append({'name': zhongyao.name, 'py': zhongyao.pinyin})
+    
     return jsonify(suggestions)
-
-def queryByPinyin(name):
-  list = []
-  for zhongyao in app.data.zhongyaos:
-    if zhongyao.matchPinyin(name):
-      list.append(zhongyao)
-  return list
-
-def queryByHanzi(name):
-  list = []
-  for zhongyao in app.data.zhongyaos:
-    if zhongyao.matchHanzi(name):
-      list.append(zhongyao)
-  return list
