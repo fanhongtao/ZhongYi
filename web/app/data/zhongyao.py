@@ -37,4 +37,5 @@ def load_zhongyaos():
             except FinishedException:
                 pass
             result.append(ZhongYao(zhongyao.name, zhongyao.pinyin))
+    result.sort(key=lambda x: x.asciiPinyin)
     return result
