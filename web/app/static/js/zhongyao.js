@@ -8,6 +8,10 @@ function displayZhongYao() {
   if (zhongyao.length == 0) {
     return;
   }
+  queryZhongYao(zhongyao);
+}
+
+function queryZhongYao(zhongyao) {
   $.ajax({
     type : "GET",
     contentType: "application/json;charset=UTF-8",
@@ -137,6 +141,9 @@ function bindEvents() {
           }));
         },
       });
+    },
+    select: function(event, ui) {
+      queryZhongYao(ui.item.value);
     },
   });
 }
