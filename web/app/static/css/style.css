@@ -17,3 +17,6 @@ table tr th:last-child, table tr td:last-child { border-right: none; }
   overflow-x: hidden;     /* 数据较宽时，进行裁剪 */
   overflow-y: auto;       /* 提示记录较多时，显示滚动条 */
 }
+
+#result a { color:#CC3300; text-decoration:none; }
+#result a:hover { text-decoration:underline; cursor:pointer; }

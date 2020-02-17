@@ -40,6 +40,9 @@ function parseXML(xml) {
   content += getElement(xml, "其他");
   content += getFuYao(xml);
   $("#result").html(content);
+  $("#result a:not([herf])").each(function() {
+    $(this).attr('href', window.location.pathname + "?yao=" + $(this).text());
+  });
 }
 
 function getElement(xml, name) {
@@ -80,7 +83,7 @@ function getYingYong(xml) {
     var title = $($(this).find("title")[0]).text();
     content += "<p><font class='bold'>" + title + "</font><br/>";
     $(this).find("title").remove();
-    content += $(this).text() + "</p>";
+    content += $(this).html() + "</p>";
   });
   return content;
 }
