@@ -1,3 +1,5 @@
+body { background-color: #f0f0f0; font-family: 'Microsoft YaHei', 'SimHei', '宋体', sans-serif; }
+a:hover, a:focus { background: #c3c3c3; border-bottom: 1px solid #777; text-decoration: none; }
 
 /* Table */
 table       { border-collapse: collapse; margin: 10px 0 10px; padding: 0; border-top: 2px solid #303030; border-bottom: 2px solid #303030; }
@@ -18,5 +20,4 @@ table tr th:last-child, table tr td:last-child { border-right: none; }
   overflow-y: auto;       /* 提示记录较多时，显示滚动条 */
 }
 
-#result a { color:#CC3300; text-decoration:none; }
-#result a:hover { text-decoration:underline; cursor:pointer; }
+#result a { border-bottom: 1px dotted #686868; color: #CC3300; text-decoration: none; }

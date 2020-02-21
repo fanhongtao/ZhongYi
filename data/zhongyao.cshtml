@@ -9,7 +9,7 @@
 						<xs:attribute name="py" type="xs:string" use="required" />
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="介绍" type="xs:string" />
+				<xs:element name="介绍" type="html" />
 				<xs:element name="药性">
 					<xs:complexType>
 						<xs:sequence>
@@ -19,22 +19,23 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="功效" type="xs:string" />
+				<xs:element name="功效" type="html" />
 				<xs:element name="应用">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element maxOccurs="unbounded" name="para">
-								<xs:complexType mixed="true">
-									<xs:sequence minOccurs="0">
-										<xs:element name="title" type="xs:string" />
+							<xs:element name="para" maxOccurs="unbounded" >
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="title" type="xs:string" minOccurs="0" />
+										<xs:element name="text" type="html" />
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="用法用量" type="xs:string" />
-				<xs:element name="使用注意" type="xs:string" minOccurs="0" />
+				<xs:element name="用法用量" type="html" />
+				<xs:element name="使用注意" type="html" minOccurs="0" />
 				<xs:element name="鉴别用药" minOccurs="0" maxOccurs="unbounded" >
 					<xs:complexType mixed="true">
 						<xs:sequence>
@@ -42,9 +43,19 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="其他" type="xs:string" minOccurs="0" />
+				<xs:element name="其他" type="html" minOccurs="0" />
 				<xs:element name="附药" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	
+	<xs:complexType name="html" mixed="true">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="a" type="xs:string"/>
+				<xs:element name="br" />
+				<xs:element name="sub" type="xs:string"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>
