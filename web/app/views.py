@@ -12,29 +12,53 @@ def index():
 
 @app.route('/zhongyaochaxun')
 def zhongyaochaxun():
-    name = request.args.get('yao')
-    if (name == None):
-        return render_template('zhongyaochaxun.html')
-    file = Path(const.ZHONGYAO_PATH + name + ".xml")
-    if file.is_file():
-        return render_template('zhongyaochaxun.html', zhongyao=name)
-    return render_template('zhongyaochaxun.html', error="没有收录：" + name)
+    return query_named_item_html(const.ZHONGYAO_PATH, 'zhongyaochaxun.html')
 
 @app.route('/ajax/zhongyao')
 def ajaxzhongyao():
-    name = request.args.get('name')
-    file = Path(const.ZHONGYAO_PATH + name + ".xml")
-    if file.is_file():
-        return read_file(file)
-    return None
+    return query_named_item(const.ZHONGYAO_PATH)
+
+@app.route('/ajax/zhongyaosuggestion')
+def zhongyaosuggestion():
+    return query_named_item_suggestion(app.data.zhongyaos)
+
+
+@app.route('/fangjichaxun')
+def fangjichaxun():
+    return query_named_item_html(const.FANGJI_PATH, 'fangjichaxun.html')
+
+@app.route('/ajax/fangji')
+def ajaxfangji():
+    return query_named_item(const.FANGJI_PATH)
+
+@app.route('/ajax/fangjisuggestion')
+def fangjisuggestion():
+    return query_named_item_suggestion(app.data.fangjis)
+
 
 def read_file(file_path):
     with open(file_path,'r',encoding='utf-8') as f:
         data = f.read()
     return data
 
-@app.route('/ajax/zhongyaosuggestion')
-def zhongyaosuggestion():
+
+def query_named_item_html(path, template):
+    name = request.args.get('name')
+    if (name == None):
+        return render_template(template)
+    file = Path(path + name + ".xml")
+    if file.is_file():
+        return render_template(template, name=name)
+    return render_template(template, error="没有收录：" + name)
+
+def query_named_item(path):
+    name = request.args.get('name')
+    file = Path(path + name + ".xml")
+    if file.is_file():
+        return read_file(file)
+    return None
+
+def query_named_item_suggestion(item_list):
     name = request.args.get('name')
     ch = name[0:1]
     byPinyin = False
@@ -42,8 +66,9 @@ def zhongyaosuggestion():
         byPinyin = True
     
     suggestions = []
-    for zhongyao in app.data.zhongyaos:
-        if zhongyao.match(name, byPinyin):
-            suggestions.append({'name': zhongyao.name, 'py': zhongyao.pinyin})
+    for item in item_list:
+        if item.match(name, byPinyin):
+            suggestions.append({'name': item.name, 'py': item.pinyin})
     
     return jsonify(suggestions)
+

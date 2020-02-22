@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/query-named-item.js') }}"></script>
+<div id="query">
+  <form id="form" method="get">
+    {% block title %}{% endblock %}
+    <input id="userinput" type="text" name="name" size="40"
+        autocomplete="off"
+        placeholder="输入汉字或拼音，按“回车”即可查询"
+        {% if name %} value={{ name }} {% endif %} />
+    <input type="submit" value="查询"/>
+  </form>
+</div>
+
+<div id="result">
+  {{ error }}
+</div>
+{% block other %}{% endblock %}
+{% endblock %}

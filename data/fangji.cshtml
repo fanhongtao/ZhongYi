@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="方剂">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="名称" type="yaoming" />
+				<xs:element name="别名" type="bieming" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="组成">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="内容" type="html" />
+							<xs:element name="药" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="名" type="xs:string" use="required" />
+									<xs:attribute name="量" type="xs:string" use="required" />
+									<xs:attribute name="其他" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="用法" type="html" />
+				<xs:element name="功用" type="html" />
+				<xs:element name="主治" type="html" />
+				<xs:element name="证治机理" type="html" minOccurs="0" />
+				<xs:element name="方解" type="html" minOccurs="0" />
+				<xs:element name="配伍特点" type="html" minOccurs="0" />
+				<xs:element name="辨证要点" type="html" minOccurs="0" />
+				<xs:element name="使用注意" type="html" minOccurs="0" />
+				<xs:element name="临证加减" type="html" minOccurs="0" />
+				<xs:element name="附方" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="鉴别" minOccurs="0" maxOccurs="unbounded" >
+					<xs:complexType mixed="true">
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="方名" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="医案举例" type="html" minOccurs="0" />
+				<xs:element name="方歌" type="html" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="html" mixed="true">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="a" type="xs:string"/>
+				<xs:element name="br" />
+				<xs:element name="sub" type="xs:string"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="yaoming">
+		<xs:attribute name="hz" type="xs:string" use="required" /> <!-- 汉字 -->
+		<xs:attribute name="py" type="xs:string" use="required" /> <!-- 拼音 -->
+		<xs:attribute name="cc" type="xs:string" use="required" /> <!-- 出处 -->
+	</xs:complexType>
+	
+	<xs:complexType name="bieming">
+		<xs:attribute name="hz" type="xs:string" use="required" /> <!-- 汉字 -->
+		<xs:attribute name="py" type="xs:string" use="required" /> <!-- 拼音 -->
+	</xs:complexType>
+</xs:schema>
