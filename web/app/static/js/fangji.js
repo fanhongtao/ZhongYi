@@ -16,7 +16,8 @@ function parseXML(xml) {
   content += getHtmlElement(xml, "辨证要点");
   content += getHtmlElement(xml, "使用注意");
   content += getHtmlElement(xml, "临证加减");
-  content += getFuFang(xml);
+  content += getLinkedItem(xml, "附方");
+  content += getLinkedItem(xml, "主方");
   content += getJianBie(xml);
   content += getHtmlElement(xml, "医案举例");
   content += getHtmlElement(xml, "方歌");
@@ -91,14 +92,14 @@ function getJianBie(xml) {
   return content;
 }
 
-function getFuFang(xml) {
-  var fuyao = $(xml).find("附方");
-  if (fuyao.length == 0) {
+function getLinkedItem(xml, name) {
+  var ele = $(xml).find(name);
+  if (ele.length == 0) {
     return "";
   }
   var count = 0;
-  var content = "<h2>" + "附方" + "</h2>";
-  $(fuyao).each(function() {
+  var content = "<h2>" + name + "</h2>";
+  $(ele).each(function() {
     count++;
     if (count > 1) {
       content += ", ";
