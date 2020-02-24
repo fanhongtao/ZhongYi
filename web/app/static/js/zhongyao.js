@@ -15,7 +15,7 @@ function parseXML(xml) {
   content += getHtmlElement(xml, "其他");
   content += getFuYao(xml);
   $("#result").html(content);
-  $("#result a:not([herf])").each(function() {
+  $("#result a:not([href])").each(function() {
     $(this).attr('href', window.location.pathname + "?name=" + $(this).text());
   });
 }
