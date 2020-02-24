@@ -5,7 +5,6 @@ $(document).ready(function() {
 function parseXML(xml) {
   var name = $(xml).find("名称")[0];
   var content = "<h1>" + $(name).attr('hz') + " ( " + $(name).attr('py') + " ) " + $(name).attr('cc') + " </h1>";
-  content += getHtmlElement(xml, "介绍");
   content += getZuCheng(xml);
   content += getHtmlElement(xml, "用法");
   content += getHtmlElement(xml, "功用");
@@ -38,6 +37,7 @@ function getHtmlElement(xml, name) {
     content = "<h2>" + name + "</h2>";
     content += $(ele[0]).html();
   }
+  content += "\n";
   return content;
 }
 
@@ -53,20 +53,23 @@ function addSubElement(xml, name) {
 }
 
 function getZuCheng(xml) {
-  var yaoxing = $(xml).find("组成")[0];
+  var zucheng = $(xml).find("组成")[0];
   content = "<h2>" + "组成" + "</h2>";
-  content += addSubElement(yaoxing, "内容");
-  return content;
-}
-
-function getYingYong(xml) {
-  var yingyong = $(xml).find("应用")[0];
-  var content = "<h2>" + "应用" + "</h2>";
-  $(yingyong).find("para").each(function() {
-    var title = $($(this).find("title")[0]).text();
-    content += "<p><font class='bold'>" + title + "</font><br/>";
-    content += $($(this).find("text")[0]).html() + "</p>";
+  content += addSubElement(zucheng, "内容");
+  
+  content += '<table class="fangji">';
+  content += '<thead><tr><td>编号</td><td>药名</td><td>剂量</td><td>注意事项</td></thead>';
+  content += '<tbody>';
+  var idx = 0;
+  $(zucheng).find("药").each(function() {
+    zhuyi = ($(this).attr('注') == null) ? "" : $(this).attr('注');
+    content += '<tr><td>' + ++idx + '</td><td>'
+      + $(this).attr('名') + '</td><td>' 
+      + $(this).attr('量') + '</td><td>'
+      + zhuyi + '</td></tr>';
   });
+  content += '</tbody></table>';
+  content += '\n';
   return content;
 }
 
@@ -92,6 +95,7 @@ function getJianBie(xml) {
     content += $(this).text();
     content += "<br/>";
   });
+  content += "\n";
   return content;
 }
 
@@ -109,6 +113,7 @@ function getLinkedItem(xml, name) {
     }
     content += getLink($(this).text());
   });
+  content += "\n";
   return content;
 }
 
