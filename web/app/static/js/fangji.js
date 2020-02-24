@@ -22,8 +22,11 @@ function parseXML(xml) {
   content += getHtmlElement(xml, "医案举例");
   content += getHtmlElement(xml, "方歌");
   $("#result").html(content);
-  $("#result a:not([herf])").each(function() {
+  $("#result a[href='fang']").each(function() {
     $(this).attr('href', window.location.pathname + "?name=" + $(this).text());
+  });
+  $("#result a:not([href])").each(function() {
+    $(this).attr('href', "/zhongyaochaxun" + "?name=" + $(this).text());
   });
 }
 

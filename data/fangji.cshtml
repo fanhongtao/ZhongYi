@@ -48,7 +48,11 @@
 	<xs:complexType name="html" mixed="true">
 		<xs:sequence>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
-				<xs:element name="a" type="xs:string"/>
+				<xs:element name="a">
+					<xs:complexType mixed="true">
+						<xs:attribute name="href" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="br" />
 				<xs:element name="sub" type="xs:string"/>
 			</xs:choice>
