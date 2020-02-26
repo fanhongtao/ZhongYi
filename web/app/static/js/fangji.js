@@ -3,8 +3,7 @@ $(document).ready(function() {
 });
 
 function parseXML(xml) {
-  var name = $(xml).find("名称")[0];
-  var content = "<h1>" + $(name).attr('hz') + " ( " + $(name).attr('py') + " ) " + $(name).attr('cc') + " </h1>";
+  content = getMingCheng(xml);
   content += getZuCheng(xml);
   content += getHtmlElement(xml, "用法");
   content += getHtmlElement(xml, "功用");
@@ -52,6 +51,13 @@ function addSubElement(xml, name) {
   return content;
 }
 
+function getMingCheng(xml) {
+  var name = $(xml).find("名称")[0];
+  var content = '<div class="center"><h1>' + $(name).attr('hz') + " ( " + $(name).attr('py') + " ) </h1>\n" ;
+  content += $(name).attr('cc') + "</div>";
+  return content;
+}
+
 function getZuCheng(xml) {
   var zucheng = $(xml).find("组成")[0];
   content = "<h2>" + "组成" + "</h2>";
@@ -64,7 +70,7 @@ function getZuCheng(xml) {
   $(zucheng).find("药").each(function() {
     zhuyi = ($(this).attr('注') == null) ? "" : $(this).attr('注');
     content += '<tr><td>' + ++idx + '</td><td>'
-      + $(this).attr('名') + '</td><td>' 
+      + '<a>' + $(this).attr('名') + '</a></td><td>' 
       + $(this).attr('量') + '</td><td>'
       + zhuyi + '</td></tr>';
   });
