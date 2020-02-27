@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="桂枝加芍药汤" py="guì,zhī,jiā,sháo,yao,tāng" cc="《伤寒论》"/>
 	<组成>
-		<内容>桂枝去皮，三两(9g) 芍药六两（18g） 甘草炙，二两（6g） 大枣擘，十二枚(6g) 生姜切，三两(9g)</内容>
+		<内容>桂枝<sub>去皮，三两</sub>（9g） 芍药<sub>六两</sub>（18g） 甘草<sub>炙，二两</sub>（6g） 大枣<sub>擘，十二枚</sub>（6g） 生姜<sub>切，三两</sub>（9g）</内容>
 		<药 名="桂枝" 量="9g" 注="去皮" />
 		<药 名="芍药" 量="18g" />
 		<药 名="甘草" 量="6g" 注="炙" />

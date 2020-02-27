@@ -40,17 +40,6 @@ function getHtmlElement(xml, name) {
   return content;
 }
 
-function addSubElement(xml, name) {
-  var ele = $(xml).find(name);
-  if (ele.length == 0) {
-    content = "";
-  } else {
-    content = "<font class='bold'>" + name + "</font>: ";
-    content += $(ele[0]).text() + "<br/>";
-  }
-  return content;
-}
-
 function getMingCheng(xml) {
   var name = $(xml).find("名称")[0];
   var content = '<div class="center"><h1>' + $(name).attr('hz') + " ( " + $(name).attr('py') + " ) </h1>\n" ;
@@ -60,8 +49,9 @@ function getMingCheng(xml) {
 
 function getZuCheng(xml) {
   var zucheng = $(xml).find("组成")[0];
+  var neirong = $(zucheng).find("内容")[0];
   content = "<h2>" + "组成" + "</h2>";
-  content += addSubElement(zucheng, "内容");
+  content += $(neirong).html().replace(/ /g, "&emsp;");
   
   content += '<table class="fangji">';
   content += '<thead><tr><td>编号</td><td>药名</td><td>剂量</td><td>注意事项</td></thead>';

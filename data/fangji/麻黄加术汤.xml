@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="麻黄加术汤" py="má,huáng,jiā,zhú,tāng " cc="《金匮要略》"/>
 	<组成>
-		<内容>麻黄去节，三两(9g) 桂枝去皮，二两(6g) 甘草炙，一两(3g) 杏仁去皮尖，七十个(9g) 白术四两（12g）</内容>
+		<内容>麻黄<sub>去节，三两</sub>（9g） 桂枝<sub>去皮，二两</sub>（6g） 甘草<sub>炙，一两</sub>（3g） 杏仁<sub>去皮尖，七十个</sub>（9g） 白术<sub>四两</sub>（12g）</内容>
 		<药 名="麻黄" 量="9g" 注="去节" />
 		<药 名="桂枝" 量="6g" 注="去皮" />
 		<药 名="杏仁" 量="9g" 注="去皮尖" />

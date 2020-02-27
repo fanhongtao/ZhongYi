@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="麻黄汤" py="má,huáng,tāng" cc="《伤寒论》"/>
 	<组成>
-		<内容>麻黄 去节，三两（9g） 桂枝 去皮，二两（6g） 杏仁 去皮尖，七十个（9g） 甘草 炙，一两（3g）</内容>
+		<内容>麻黄<sub>去节，三两</sub>（9g） 桂枝<sub>去皮，二两</sub>（6g） 杏仁<sub>去皮尖，七十个</sub>（9g） 甘草<sub>炙，一两</sub>（3g）</内容>
 		<药 名="麻黄" 量="9g" 注="去节" />
 		<药 名="桂枝" 量="6g" 注="去皮" />
 		<药 名="杏仁" 量="9g" 注="去皮尖" />
