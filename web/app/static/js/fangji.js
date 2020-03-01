@@ -85,10 +85,10 @@ function getJianBie(xml) {
         content += ", ";
       }
       content += getLink($(this).text());
-      $(this).remove();
     });
     content += "</font><br/>";
-    content += $(this).text();
+    var neirong = $(this).find("内容")[0];
+    content += $(neirong).html();
     content += "<br/>";
   });
   content += "\n";

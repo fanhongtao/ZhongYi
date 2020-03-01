@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="" py="" cc="《》"/>
+	<别名 hz="" py="" />
 	<组成>
 		<内容></内容>
 		<药 名="" 量="" 注="" />
@@ -21,6 +22,7 @@
 	<鉴别>
 		<方名></方名>
 		<方名></方名>
+		<内容></内容>
 	</鉴别>
 	<医案举例></医案举例>
 	<方歌></方歌>
