@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="华盖散" py="huá,gài,sǎn" cc="《博济方》"/>
 	<组成>
-		<内容>紫苏子<sub>炒</sub> 麻黄<sub>去根节</sub> 杏仁<sub>去皮尖</sub> 陈皮<sub>去白</sub> 桑白皮 赤茯苓<sub>去皮</sub>，各一两（6g） 甘草半两（3g）</内容>
+		<原文>紫苏子<sub>炒</sub> 麻黄<sub>去根节</sub> 杏仁<sub>去皮尖</sub> 陈皮<sub>去白</sub> 桑白皮 赤茯苓<sub>去皮</sub>，各一两（6g） 甘草半两（3g）</原文>
 		<药 名="麻黄" 量="6g" 注="去根节" />
 		<药 名="杏仁" 量="6g" 注="去皮尖" />
 		<药 名="甘草" 量="3g" />

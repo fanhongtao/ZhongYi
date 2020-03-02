@@ -49,7 +49,7 @@ function getMingCheng(xml) {
 
 function getZuCheng(xml) {
   var zucheng = $(xml).find("组成")[0];
-  var neirong = $(zucheng).find("内容")[0];
+  var neirong = $(zucheng).find("原文")[0];
   content = "<h2>" + "组成" + "</h2>";
   content += $(neirong).html().replace(/ /g, "&emsp;");
   

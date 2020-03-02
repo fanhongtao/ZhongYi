@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="小青龙汤" py="xiǎo,qīng,lóng,tāng" cc="《伤寒论》"/>
 	<组成>
-		<内容>麻黄<sub>去节，三两</sub>（9g） 芍药<sub>三两</sub>（9g） 细辛<sub>三两</sub>（3g） 干姜<sub>三两</sub>（6g） 甘草<sub>炙，三两</sub>（6g） 桂枝<sub>去皮，三两</sub>（9g） 五味子<sub>半升</sub>（9g） 半夏<sub>洗，半升</sub>（9g）</内容>
+		<原文>麻黄<sub>去节，三两</sub>（9g） 芍药<sub>三两</sub>（9g） 细辛<sub>三两</sub>（3g） 干姜<sub>三两</sub>（6g） 甘草<sub>炙，三两</sub>（6g） 桂枝<sub>去皮，三两</sub>（9g） 五味子<sub>半升</sub>（9g） 半夏<sub>洗，半升</sub>（9g）</原文>
 		<药 名="麻黄" 量="9g" 注="去节" />
 		<药 名="芍药" 量="9g" />
 		<药 名="细辛" 量="3g" />

@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="九味羌活汤" py="jiǔ,wèi,qiāng,huó,tāng" cc="张元素方，录自《此事难知》"/>
 	<组成>
-		<内容>羌活（9g） 防风（9g） 苍术（9g） 细辛（3g） 川芎（6g） 香白芷（6g） 生地黄（6g） 黄芩（6g） 甘草（6g） （原著本方无用量）</内容>
+		<原文>羌活（9g） 防风（9g） 苍术（9g） 细辛（3g） 川芎（6g） 香白芷（6g） 生地黄（6g） 黄芩（6g） 甘草（6g） （原著本方无用量）</原文>
 		<药 名="羌活" 量="9g"/>
 		<药 名="防风" 量="9g"/>
 		<药 名="苍术" 量="9g"/>

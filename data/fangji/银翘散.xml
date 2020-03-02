@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="银翘散" py="yín,qiáo,sǎn" cc="《温病条辨》"/>
 	<组成>
-		<内容>连翘<sub>一两</sub>（30g） 银花<sub>一两</sub>（30g） 苦桔梗<sub>六钱</sub>（18g） 薄荷<sub>六钱</sub>（18g） 竹叶<sub>四钱</sub>（12g） 生甘草<sub>五钱</sub>（15g） 芥穗<sub>四钱</sub>（12g） 淡豆豉<sub>五钱</sub>（15g） 牛蒡子<sub>六钱</sub>（18g）</内容>
+		<原文>连翘<sub>一两</sub>（30g） 银花<sub>一两</sub>（30g） 苦桔梗<sub>六钱</sub>（18g） 薄荷<sub>六钱</sub>（18g） 竹叶<sub>四钱</sub>（12g） 生甘草<sub>五钱</sub>（15g） 芥穗<sub>四钱</sub>（12g） 淡豆豉<sub>五钱</sub>（15g） 牛蒡子<sub>六钱</sub>（18g）</原文>
 		<药 名="连翘" 量="30g" />
 		<药 名="银花" 量="30g" />
 		<药 名="苦桔梗" 量="18g" />

@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="桑菊饮" py="sāng,jú,yǐn" cc="《温病条辨》"/>
 	<组成>
-		<内容>桑叶<sub>二钱五分</sub>（7.5g） 菊花<sub>一钱</sub>（3g） 杏仁<sub>二钱</sub>（6g） 连翘<sub>一钱五分</sub>（5g） 薄荷<sub>八分</sub>（2.5g） 苦桔梗<sub>二钱</sub>（6g） 生甘草<sub>八分</sub>（2.5g） 苇根<sub>二钱</sub>（6g）</内容>
+		<原文>桑叶<sub>二钱五分</sub>（7.5g） 菊花<sub>一钱</sub>（3g） 杏仁<sub>二钱</sub>（6g） 连翘<sub>一钱五分</sub>（5g） 薄荷<sub>八分</sub>（2.5g） 苦桔梗<sub>二钱</sub>（6g） 生甘草<sub>八分</sub>（2.5g） 苇根<sub>二钱</sub>（6g）</原文>
 		<药 名="桑叶" 量="7.5g" />
 		<药 名="菊花" 量="3g" />
 		<药 名="杏仁" 量="6g" />

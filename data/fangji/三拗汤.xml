@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="三拗汤" py="sān,ǎo,tāng" cc="《太平惠民和剂局方》"/>
 	<组成>
-		<内容>甘草<sub>不炙</sub> 麻黄<sub>不去根节</sub> 杏仁<sub>不去皮尖</sub>，各等分（各6g） </内容>
+		<原文>甘草<sub>不炙</sub> 麻黄<sub>不去根节</sub> 杏仁<sub>不去皮尖</sub>，各等分（各6g） </原文>
 		<药 名="麻黄" 量="6g" 注="不去根节" />
 		<药 名="杏仁" 量="9g" 注="不去皮尖" />
 		<药 名="甘草" 量="3g" 注="不炙" />

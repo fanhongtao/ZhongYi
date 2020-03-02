@@ -2,7 +2,7 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="止嗽散" py="zhǐ,sòu,sǎn" cc="《医学心悟》"/>
 	<组成>
-		<内容>桔梗<sub>炒</sub> 荆芥 紫菀<sub>蒸</sub> 百部<sub>蒸</sub> 白前<sub>蒸</sub>，各二斤（各12g） 甘草<sub>炒，十二两</sub>（4g） 陈皮<sub>水洗，去白，一斤</sub>（6g）</内容>
+		<原文>桔梗<sub>炒</sub> 荆芥 紫菀<sub>蒸</sub> 百部<sub>蒸</sub> 白前<sub>蒸</sub>，各二斤（各12g） 甘草<sub>炒，十二两</sub>（4g） 陈皮<sub>水洗，去白，一斤</sub>（6g）</原文>
 		<药 名="桔梗" 量="12g" 注="炒" />
 		<药 名="荆芥" 量="12g" />
 		<药 名="紫菀" 量="12g" 注="蒸" />

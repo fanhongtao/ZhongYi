@@ -2,13 +2,13 @@
 <方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
 	<名称 hz="清肺排毒汤" py="qīng,fèi,pái,dú,tāng" cc="国中医药办医政函〔2020〕22号"/>
 	<组成>
-		<内容>麻 黄9g　炙甘草6g　杏仁9g　生石膏15-30g(先煎)<br/>
+		<原文>麻 黄9g　炙甘草6g　杏仁9g　生石膏15-30g(先煎)<br/>
 		桂 枝9g　泽 泻9g　猪 苓9g　白 术9g<br/>
 		茯苓15g　柴 胡16g　黄 芩6g　姜半夏9g<br/>
 		生 姜9g　紫 菀9g　冬 花9g　射 干9g<br/>
 		细 辛6g　山 药12g　枳 实6g　陈 皮6g<br/>
 		藿 香9g<br/>
-		</内容>
+		</原文>
 		<药 名="麻黄" 量="9g" />
 		<药 名="炙甘草" 量="6g" />
 		<药 名="杏仁" 量="9g" />
