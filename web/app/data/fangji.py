@@ -3,7 +3,13 @@ from app.data.nameditem import NamedItem, load_list
 
 
 class FangJi(NamedItem):
-    pass
+    def __init__(self):
+        super(NamedItem, self).__init__()
+        self.fufangs = []
+    
+    def characters(self, content):
+        if self.currentTag == "附方":
+            self.fufangs.append(content)
 
 
 def load_fangjis():

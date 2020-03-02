@@ -7,14 +7,18 @@ from app.exceptions import FinishedException
 class NamedItem(sax.ContentHandler):
     """有名字、拼音的项目，用于根据汉字或拼音进行查询"""
     def __init__(self):
+        self.currentTag = ""
         self.name = ""
         self.pinyin = ""
         self.asciiPinyin = ""
     
     def startElement(self, name, attrs):
+        self.currentTag = name
         if name == "名称":
             self.set_name(attrs["hz"], attrs["py"])
-            raise FinishedException()
+    
+    def endElement(self, tag):
+        self.currentTag = ""
     
     def set_name(self, name, pinyin):
         self.name = name

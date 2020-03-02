@@ -23,7 +23,7 @@ def zhongyaochaxun():
 
 @app.route('/ajax/zhongyao')
 def ajaxzhongyao():
-    return query_named_item(const.ZHONGYAO_PATH)
+    return query_named_item(const.ZHONGYAO_PATH, empty_headers)
 
 @app.route('/ajax/zhongyaosuggestion')
 def zhongyaosuggestion():
@@ -36,11 +36,19 @@ def fangjichaxun():
 
 @app.route('/ajax/fangji')
 def ajaxfangji():
-    return query_named_item(const.FANGJI_PATH)
+    return query_named_item(const.FANGJI_PATH, fangji_headers)
 
 @app.route('/ajax/fangjisuggestion')
 def fangjisuggestion():
     return query_named_item_suggestion(app.data.fangjis)
+
+def fangji_headers(name):
+    headers = []
+    if name in app.data.fufang_dict:
+        list = app.data.fufang_dict[name]
+        for item in list:
+            headers.append(("zhufang", item.encode()))
+    return headers
 
 
 def read_file(file_path):
@@ -58,11 +66,12 @@ def query_named_item_html(path, template):
         return render_template(template, name=name)
     return render_template(template, error="没有收录：" + name)
 
-def query_named_item(path):
+def query_named_item(path, header_callback):
     name = request.args.get('name')
     file = Path(path + name + ".xml")
     if file.is_file():
-        return read_file(file)
+        headers = header_callback(name)
+        return read_file(file), 200, headers
     return None
 
 def query_named_item_suggestion(item_list):
@@ -78,4 +87,8 @@ def query_named_item_suggestion(item_list):
             suggestions.append({'name': item.name, 'py': item.pinyin})
     
     return jsonify(suggestions)
+
+
+def empty_headers(name):
+    return []
 
