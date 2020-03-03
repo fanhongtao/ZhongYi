@@ -55,7 +55,7 @@ class Data:
             if (name in fangji_jianbie_dict):
                 list = fangji_jianbie_dict[name]
                 for jianbie in list:
-                    dom.documentElement.appendChild(jianbie["jianbie"])
+                    dom.documentElement.appendChild(jianbie["jianbie"].cloneNode(deep=True))
             
             if name in fufang_dict:
                 list = fufang_dict[name]
