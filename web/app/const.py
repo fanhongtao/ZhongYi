@@ -12,3 +12,4 @@ class _const:
 const = _const()
 const.ZHONGYAO_PATH = "../data/zhongyao/"
 const.FANGJI_PATH = "../data/fangji/"
+const.FANGJI_WORK_PATH = "../work/fangji/"

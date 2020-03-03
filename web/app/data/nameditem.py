@@ -1,29 +1,19 @@
 import os
-from xml import sax
-
-from app.exceptions import FinishedException
+from xml.dom.minidom import parse
 
 
-class NamedItem(sax.ContentHandler):
+class NamedItem:
     """有名字、拼音的项目，用于根据汉字或拼音进行查询"""
     def __init__(self):
-        self.currentTag = ""
         self.name = ""
         self.pinyin = ""
         self.asciiPinyin = ""
     
-    def startElement(self, name, attrs):
-        self.currentTag = name
-        if name == "名称":
-            self.set_name(attrs["hz"], attrs["py"])
-    
-    def endElement(self, tag):
-        self.currentTag = ""
-    
-    def set_name(self, name, pinyin):
-        self.name = name
-        self.pinyin = pinyin
-        self.asciiPinyin = get_ascii_pinyin(pinyin)
+    def parse_dom(self, dom):
+        mingcheng = dom.getElementsByTagName("名称")[0]
+        self.name = mingcheng.getAttribute("hz")
+        self.pinyin = mingcheng.getAttribute("py")
+        self.asciiPinyin = get_ascii_pinyin(self.pinyin)
     
     def match(self, input, byPinyin):
         """记录的名字是否能匹配输入的字符串
@@ -80,15 +70,10 @@ def load_list(dir, item_class):
     result = []
     list = os.listdir(dir)
     for file in list:
-        if (file.endswith(".xml")):
-            parser = sax.make_parser()
-            parser.setFeature(sax.handler.feature_namespaces, 0)
+        if file.endswith(".xml") and (file != "template.xml"):
+            dom = parse(dir + file)
             item = item_class()
-            parser.setContentHandler(item)
-            try:
-                parser.parse(dir + file)
-            except FinishedException:
-                pass
+            item.parse_dom(dom)
             result.append(item)
     result.sort(key=lambda x: x.asciiPinyin)
     return result

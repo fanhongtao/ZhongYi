@@ -32,11 +32,11 @@ def zhongyaosuggestion():
 
 @app.route('/fangjichaxun')
 def fangjichaxun():
-    return query_named_item_html(const.FANGJI_PATH, 'fangjichaxun.html')
+    return query_named_item_html(const.FANGJI_WORK_PATH, 'fangjichaxun.html')
 
 @app.route('/ajax/fangji')
 def ajaxfangji():
-    return query_named_item(const.FANGJI_PATH, fangji_headers)
+    return query_named_item(const.FANGJI_WORK_PATH, fangji_headers)
 
 @app.route('/ajax/fangjisuggestion')
 def fangjisuggestion():
