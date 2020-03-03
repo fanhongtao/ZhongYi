@@ -18,7 +18,7 @@ function parseXML(xml, textStatus, xmlHttpRequest) {
   content += getJianBie(xml);
   content += getHtmlElement(xml, "医案举例");
   content += getHtmlElement(xml, "方歌");
-  content += getElementFromHeader(xmlHttpRequest, "zhufang", "主方");
+  content += getLinkedItem(xml, "主方");
   $("#result").html(content);
   $("#result a[href='fang']").each(function() {
     $(this).attr('href', window.location.pathname + "?name=" + $(this).text());
@@ -115,28 +115,4 @@ function getLinkedItem(xml, name) {
 
 function getLink(name) {
   return "<a href='" + window.location.pathname + "?name=" + name + "'>" + name + "</a>";
-}
-
-function getElementFromHeader(xmlHttpRequest, header, name) {
-  var ele = xmlHttpRequest.getResponseHeader(header)
-  if (ele == null) {
-    return "";
-  }
-  var content = "<h2>" + name + "</h2>";
-  var list = toHanzi(ele).split(",");
-  for (i = 0, len = list.length; i < len; i++) {
-    if (i > 0) {
-      content += ", ";
-    }
-    content += getLink(list[i]);
-  }
-  content += "\n";
-  return content;
-}
-
-function toHanzi(content) {
-  temp = content.replace('b\'', '')
-  temp = temp.replace(/'/g, '')
-  temp = temp.replace(/\\x/g, '%')
-  return decodeURIComponent(temp)
 }
