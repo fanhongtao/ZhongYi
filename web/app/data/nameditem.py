@@ -9,8 +9,8 @@ class NamedItem:
         self.pinyin = ""
         self.asciiPinyin = ""
     
-    def parse_dom(self, dom):
-        mingcheng = dom.getElementsByTagName("名称")[0]
+    def parse_xml(self, doc):
+        mingcheng = doc.getElementsByTagName("名称")[0]
         self.name = mingcheng.getAttribute("hz")
         self.pinyin = mingcheng.getAttribute("py")
         self.asciiPinyin = get_ascii_pinyin(self.pinyin)
@@ -71,9 +71,9 @@ def load_list(dir, item_class):
     list = os.listdir(dir)
     for file in list:
         if file.endswith(".xml") and (file != "template.xml"):
-            dom = parse(dir + file)
+            doc = parse(dir + file)
             item = item_class()
-            item.parse_dom(dom)
+            item.parse_xml(doc)
             result.append(item)
     result.sort(key=lambda x: x.asciiPinyin)
     return result

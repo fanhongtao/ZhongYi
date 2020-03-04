@@ -8,14 +8,14 @@ class FangJi(NamedItem):
         self.fufangs = []
         self.jianbies = []
     
-    def parse_dom(self, dom):
-        super().parse_dom(dom)
+    def parse_xml(self, doc):
+        super().parse_xml(doc)
         
-        fufangs = dom.getElementsByTagName("附方")
+        fufangs = doc.getElementsByTagName("附方")
         for fufang in fufangs:
             self.fufangs.append(fufang.childNodes[0].data)
         
-        jianbies = dom.getElementsByTagName("鉴别")
+        jianbies = doc.getElementsByTagName("鉴别")
         for jianbie in jianbies:
             item = { "fang":[] }
             fangs = jianbie.getElementsByTagName("方名")
