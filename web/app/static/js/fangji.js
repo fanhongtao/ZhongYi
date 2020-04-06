@@ -43,7 +43,23 @@ function getHtmlElement(xml, name) {
 function getMingCheng(xml) {
   var name = $(xml).find("名称")[0];
   var content = '<div class="center"><h1>' + $(name).attr('hz') + " ( " + $(name).attr('py') + " ) </h1>\n" ;
-  content += $(name).attr('cc') + "</div>";
+  content += $(name).attr('cc') + "\n";
+  
+  var bieming = $(xml).find("别名");
+  if (bieming.length != 0) {
+	content += "<p>别名:&emsp;"
+	var count = 0;
+	bieming.each(function(){
+	  count++;
+      if (count > 1) {
+        content += ", ";
+      }
+	  content += $(this).attr('hz') + " (" + $(this).attr('py') + ")";
+	})
+	content += "</p>\n"
+  }
+  
+  content += "</div>";
   return content;
 }
 
