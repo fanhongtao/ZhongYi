@@ -73,10 +73,11 @@ function getZuCheng(xml) {
   content += '<thead><tr><td>编号</td><td>药名</td><td>剂量</td><td>注意事项</td></thead>';
   content += '<tbody>';
   var idx = 0;
-  $(zucheng).find("药").each(function() {
+  $(zucheng).children("药,方").each(function() {
     zhuyi = ($(this).attr('注') == null) ? "" : $(this).attr('注');
+    prefix = (this.tagName == "方") ? '<a href="fang">' : '<a>';
     content += '<tr><td>' + ++idx + '</td><td>'
-      + '<a>' + $(this).attr('名') + '</a></td><td>' 
+      + prefix + $(this).attr('名') + '</a></td><td>' 
       + $(this).attr('量') + '</td><td>'
       + zhuyi + '</td></tr>';
   });

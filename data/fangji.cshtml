@@ -9,13 +9,10 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="原文" type="html" />
-							<xs:element name="药" maxOccurs="unbounded">
-								<xs:complexType>
-									<xs:attribute name="名" type="xs:string" use="required" />
-									<xs:attribute name="量" type="xs:string" use="required" />
-									<xs:attribute name="注" type="xs:string" />
-								</xs:complexType>
-							</xs:element>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="药" type="成分"/>
+								<xs:element name="方" type="成分"/>
+							</xs:choice>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -66,5 +63,11 @@
 	<xs:complexType name="bieming">
 		<xs:attribute name="hz" type="xs:string" use="required" /> <!-- 汉字 -->
 		<xs:attribute name="py" type="xs:string" use="required" /> <!-- 拼音 -->
+	</xs:complexType>
+	
+	<xs:complexType name="成分">
+		<xs:attribute name="名" type="xs:string" use="required" />
+		<xs:attribute name="量" type="xs:string" use="required" />
+		<xs:attribute name="注" type="xs:string" />
 	</xs:complexType>
 </xs:schema>
