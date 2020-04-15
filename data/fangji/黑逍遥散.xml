@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<方剂 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fangji.cshtml">
+	<名称 hz="黑逍遥散" py="hēi,xiāo,yáo,sǎn" cc="《医略六书》"/>
+	<组成>
+		<原文>即逍遥散加生地或熟地（6g）</原文>
+		<方 名="逍遥散" 量="" />
+		<药 名="生地或熟地" 量="6g" />
+	</组成>
+	<用法></用法>
+	<功用>疏肝健脾，养血调经。</功用>
+	<主治>肝脾血虚，临经腹痛，脉弦虚。</主治>
+</方剂>
